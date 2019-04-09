@@ -1,0 +1,4 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE send (date varchar, sender  varchar, count integer, primary key (date,sender));
+COMMIT;

@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE postfix(
+                        id integer primary key,
+                        date varchar,
+                        total integer,
+			rejected integer,
+			client integer
+	                );
+COMMIT;

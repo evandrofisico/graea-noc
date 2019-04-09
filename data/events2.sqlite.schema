@@ -1,0 +1,11 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE events(
+                        id integer primary key,
+                        level integer,
+                        title varchar,
+                        description varchar,
+                        state varchar,
+                        timet integer
+                , shown integer default 0);
+COMMIT;

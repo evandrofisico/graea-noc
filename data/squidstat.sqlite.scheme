@@ -1,0 +1,7 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE topusercon (date varchar, eventtype varchar, count integer, primary key (date,eventtype));
+CREATE TABLE topuserflux (date varchar, eventtype varchar, count integer, primary key (date,eventtype));
+CREATE TABLE topsitecon (date varchar, eventtype varchar, count integer, primary key (date,eventtype));
+CREATE TABLE topsiteflux (date varchar, eventtype varchar, count integer, primary key (date,eventtype));
+COMMIT;

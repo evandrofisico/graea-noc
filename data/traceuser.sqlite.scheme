@@ -1,0 +1,22 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE traceuser_session (
+			starttime integer, 
+			endtime integer, 
+			username varchar(40), 
+			host varchar(30), 
+			client varchar(30),
+			port integer, 
+			authmethod varchar(15),
+			pid integer
+			);
+CREATE TABLE traceuser_commands (
+			date integer, 
+			host varchar(30), 
+			username varchar(40), 
+			client varchar(30),
+			port integer,
+			path varchar(100),
+			exec varchar(250)
+			);
+COMMIT;

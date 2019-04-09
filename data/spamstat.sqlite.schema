@@ -1,0 +1,4 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE postfix ( date varchar, eventtype varchar, count integer, primary key (date,eventtype));
+COMMIT;

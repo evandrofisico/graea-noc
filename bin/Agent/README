@@ -1,0 +1,5 @@
+Enyo Daemon:
+
+Module/daemon to gather data from multiple daemons/services (zabbix, bacula-web, citsmart, etc).
+
+Actively connects to services.
